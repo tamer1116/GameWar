@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&family=Poppins:ital,wght@0,100;1,300&family=Staatliches&display=swap');
+
+.foundercontainer {
+    background: url(//gamewar-codezeel.myshopify.com/cdn/shop/files/testimonial-parallax_1903x1080.jpg?v=1670935925) no-repeat fixed center;
+    text-align: center;
+    padding: 100px;
+    position: relative;
+
+}
+
+
+.slider img {
+    border-radius: 50%;
+    border: 2px solid #FE7A21;
+}
+
+.slider h1 {
+    color: white;
+    font-family: 'Oxanium', cursive;
+    font-size: 18px;
+}
+
+.slider span {
+    color: #FE7A21;
+}
+
+.slider p {
+    padding: 0 200px 0 200px;
+    text-align: center;
+    color: #bfbfbf;
+    font-size: 19px;
+}
+
+
+.foundercontainer:hover .arrow-button {
+    display: block;
+}
+
+.arrow-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+
+.arrow-button.left {
+    left: 20px;
+}
+
+.arrow-button.right {
+    right: 20px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .foundercontainer {
+        padding: 50px;
+
+    }
+
+    .arrow-button {
+        display: block;
+    }
+
+    .slider p {
+        padding: 0 20px;
+    }
+}

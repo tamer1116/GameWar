@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&family=Poppins:ital,wght@0,100;1,300&family=Staatliches&display=swap');
+
+.blogcontainer {
+    padding-bottom: 150px;
+}
+
+.cards {
+    display: flex;
+    margin-top: 7%;
+    text-align: center;
+}
+
+.blogcontainer h1 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'Oxanium', cursive;
+    border-bottom: 2px solid #ff7a21;
+    width: 19%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 47px;
+}
+
+.cardd {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.cardd .image1 {
+    transition: transform 0.9s ease-in-out;
+    transform-origin: center center;
+}
+
+.cardd:hover .image1 {
+    transform: scale(1.1);
+
+}
+
+.cardd img {
+    max-width: 90%;
+    height: auto;
+}
+
+.cardd:hover .image1 {
+    transform: scale(1.06);
+}
+
+.date-comment {
+    display: flex;
+    justify-content: space-around;
+    color: darkgray;
+    font-family: 'Oxanium', cursive;
+}
+
+
+.date-comment span {
+    margin-left: 8px;
+    font-size: 18px;
+    color: darkgrey;
+    font-family: 'Oxanium', cursive;
+}
+
+.date-comment span:hover {
+    color: #ff7a21;
+    cursor: pointer;
+}
+
+.text-content p {
+    color: white;
+}
+
+.text-content p:hover {
+    color: #ff7a21;
+}
+
+.read-more-button {
+    border: none;
+    border-radius: 25%;
+    font-size: 13px;
+
+}
+
+.read-more-button:hover {
+    color: #ff7a21;
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .blogcontainer h1 {
+        font-size: 24px;
+        width: auto;
+        margin: 0;
+        padding-top: 2%;
+    }
+
+    .cardd {
+        margin: 10px 0;
+
+    }
+
+    .image1 {
+        width: 100%;
+    }
+}

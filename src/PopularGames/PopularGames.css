@@ -1,0 +1,97 @@
+.gamecontainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.card-1,
+.card-2 {
+    display: flex;
+    position: relative;
+    transition: transform 0.9s ease;
+}
+
+.card-1:hover,
+.card-2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 65px rgb(0, 0, 0);
+}
+
+.a,
+.b {
+    position: absolute;
+    right: 10%;
+    bottom: 28%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.0s ease, transform 1.5s ease;
+}
+
+.card-1:hover .a,
+.card-2:hover .b {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.a h2,
+.b h2 {
+    color: white;
+    animation: fadeIn 1.5s ease;
+}
+
+.a h1,
+.b h1 {
+    color: white;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .gamecontainer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .card-1,
+    .card-2 {
+        width: 100%;
+        display: block;
+        position: static;
+        box-shadow: none;
+        transform: none;
+    }
+
+    .a,
+    .b {
+        opacity: 1;
+        transform: none;
+        position: static;
+    }
+
+    .a h1,
+    .b h1 {
+        text-align: center;
+        font-size: 21px;
+    }
+
+    .a h2,
+    .b h2 {
+        text-align: center;
+        font-size: 21px;
+    }
+
+    .ss img {
+        width: 100%;
+    }
+}

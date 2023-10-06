@@ -1,0 +1,85 @@
+
+.footer {
+    background: url(https://gamewar-codezeel.myshopify.com/cdn/shop/files/footer-parallax_1903x1080.jpg?v=1670996056) no-repeat fixed center;
+    padding: 80px 15px 80px 15px;
+}
+
+.footer h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer p {
+    color: #BFBFBF;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer a {
+    cursor: pointer;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.footer ul {
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+}
+
+.footer li:hover {
+    color: #ff7a21;
+}
+
+.footer ul li {
+    color: #BFBFBF;
+    margin-bottom: 10px;
+}
+
+.footer form input[type="email"],
+.footer form button {
+    margin-bottom: 15px;
+}
+
+.footer>.container>div {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.footer__copyright,
+.footer__powered-by {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.footer__contact svg {
+    color: #ff7a21;
+}
+
+.footer__newsletter a {
+    font-size: 40px;
+}
+
+.footer__newsletter a:hover {
+    color: #ff7a21;
+}
+
+.newsletter-button {
+    background-color: #ff7a21;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-button:hover {
+    background-color: #ff6c00;
+}
+

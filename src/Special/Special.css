@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&family=Poppins:ital,wght@0,100;1,300&family=Staatliches&display=swap');
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7%;
+}
+
+.specialcontainer h1 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'Oxanium', cursive;
+    border-bottom: 2px solid #ff7a21;
+    width: 19%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+.image-card {
+    position: relative;
+    transition: transform 1.5s ease-in-out;
+    overflow: hidden;
+}
+
+.image-card .image {
+    transition: transform 1.5s ease-in-out;
+}
+
+.image-card:hover .image {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 767px) {
+    .images {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6%;
+    }
+
+    .specialcontainer h1 {
+        font-size: 24px;
+        width: auto;
+        margin: 0;
+        padding-top: 10%;
+    }
+
+    .image-card .image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image-card {
+        margin: 10px 0;
+    }
+
+    .image-card .image {
+        transition: none;
+    }
+
+    .image-card:hover .image {
+        opacity: 1;
+        transform: none;
+    }
+}
