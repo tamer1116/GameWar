@@ -74,6 +74,43 @@ function Creators() {
                 >
                     Previous
                 </button>
+                {page > 2 && (
+                    <button
+                        onClick={() => handlePageChange(1)}
+                    >
+                        1
+                    </button>
+                )}
+                {page > 3 && (
+                    <span>...</span>
+                )}
+                {page > 1 && (
+                    <button
+                        onClick={() => handlePageChange(page - 1)}
+                    >
+                        {page - 1}
+                    </button>
+                )}
+                <button className="active">
+                    {page}
+                </button>
+                {creators.length >= pageSize && (
+                    <button
+                        onClick={() => handlePageChange(page + 1)}
+                    >
+                        {page + 1}
+                    </button>
+                )}
+                {creators.length >= pageSize * (page + 1) && (
+                    <button
+                        onClick={() => handlePageChange(page + 2)}
+                    >
+                        {page + 2}
+                    </button>
+                )}
+                {creators.length >= pageSize * (page + 2) && (
+                    <span>...</span>
+                )}
                 <button
                     onClick={() => handlePageChange(page + 1)}
                     disabled={creators.length < pageSize}

@@ -91,6 +91,39 @@ body {
     transform: scale(1);
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #222;
+    color: #b3afbf;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover {
+    color: #FE7A21;
+}
+
+.pagination button.active {
+    background-color: #b3afbf;
+    color: #222;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
 @media (max-width: 767px) {
     .card {
         width: 100%;
