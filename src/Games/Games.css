@@ -235,7 +235,9 @@ button {
     }
 
     .line-title {
-        width: 250px;
+        width: 80%;
+        position: relative;
+        right: 85px;
     }
 
     .game-section {
