@@ -25,7 +25,9 @@ function Header() {
                         <a href="">Developers</a>
                     </li>
                     <li>
-                        <a href="">Games</a>
+                        <Link to={"/games"}>
+                            <a href="">Games</a>
+                        </Link>
                     </li>
                     <li>
                         <a href="">Publishers</a>

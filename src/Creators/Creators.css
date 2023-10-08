@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
 
 body {
-    background: #222;
     height: 100vh;
     display: grid;
     font-family: Montserrat;
@@ -17,7 +16,6 @@ body {
 }
 
 .profile {
-    position: absolute;
     width: 100px;
     height: 100px;
     bottom: -50px;
@@ -35,6 +33,7 @@ body {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+
 }
 
 .profile-name {
