@@ -29,10 +29,13 @@
 }
 
 .icon {
-    margin-left: 25px;
+    position: relative;
+    top: 9px;
+    left: 8px;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
 }
+
 
 input {
     font-size: 15px;
@@ -66,6 +69,7 @@ input {
     .icon {
         margin-left: 0;
         margin-top: 10px;
+
     }
 
     input {

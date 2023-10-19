@@ -1,8 +1,8 @@
 import React from "react";
 import "./Header.css";
 import { AiFillHeart } from "react-icons/ai"
-import { BsFillMoonFill } from "react-icons/bs"
 import { Link } from "react-router-dom";
+
 
 function Header() {
 
@@ -21,16 +21,16 @@ function Header() {
                             <a href="">Creators</a>
                         </Link>
                     </li>
-                    <li>
-                        <a href="">Developers</a>
-                    </li>
+                  
                     <li>
                         <Link to={"/games"}>
                             <a href="">Games</a>
                         </Link>
                     </li>
                     <li>
-                        <a href="">Publishers</a>
+                        <Link to={"/publishers"}>
+                            <a href="">Publishers</a>
+                        </Link>
                     </li>
                     <li>
                         <Link to={"/contact"}>
@@ -42,10 +42,10 @@ function Header() {
             <div>
                 <input type="text" placeholder="Search..." />
                 <span className="icon">
-                    <AiFillHeart />
-                    <BsFillMoonFill />
+                    <a href=""><AiFillHeart /></a>
                 </span>
             </div>
+
         </div>
 
     )

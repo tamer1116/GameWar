@@ -94,6 +94,10 @@
         flex-direction: column;
     }
 
+    .ourcontainer h1 {
+        width: 100%;
+    }
+
     .product {
         flex: 1;
         margin: 0 10px;

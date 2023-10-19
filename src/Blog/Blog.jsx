@@ -49,7 +49,7 @@ function Blog() {
       <div>
         <h1>From The Blog</h1>
       </div>
-      <div className="cards">
+      <div className="cards2">
         {blogPosts.map((post, index) => (
           <div className="cardd" key={index}>
             <img
