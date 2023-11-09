@@ -4,8 +4,9 @@ import React from "react";
 function PopularGames2() {
     return (
 
-        <div  className="gamecontainer">
-            <div data-aos="fade-right" className="card-1">
+        <div className="gamecontainer">
+            <div data-aos="fade-up" data-aos-duration="2200"
+                className="card-1">
                 <div className="ss" >
                     <img src="https://gamewar-codezeel.myshopify.com/cdn/shop/files/cms-banner-1_ae40405f-6eb4-4be7-807e-77661ffa4a8c.jpg?v=1671527547" alt="" />
                 </div>
@@ -15,7 +16,7 @@ function PopularGames2() {
                 </div>
 
             </div>
-            <div data-aos="fade-left" className="card-2">
+            <div data-aos="fade-up" data-aos-delay="400" className="card-2">
                 <div className="ss">
                     <img src="https://gamewar-codezeel.myshopify.com/cdn/shop/files/cms-banner-2.jpg?v=1670936426" alt="" />
                 </div>
