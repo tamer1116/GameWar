@@ -3,7 +3,7 @@ import "./Special.css";
 
 function Special() {
     return (
-        <div className="specialcontainer">
+        <div data-aos="zoom-in" className="specialcontainer">
             <div>
                 <h1>Special Category</h1>
             </div>

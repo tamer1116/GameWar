@@ -45,7 +45,7 @@ function Blog() {
   ];
 
   return (
-    <div className="blogcontainer">
+    <div data-aos="zoom-in" className="blogcontainer">
       <div>
         <h1>From The Blog</h1>
       </div>

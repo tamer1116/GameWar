@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./OurProducts.css";
 import { AiFillStar } from "react-icons/ai";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 
 function OurProducts() {
+    Aos.init({
+        duration: 1500,
+    });
+  
     return (
-        <div className="ourcontainer">
+        <div data-aos="zoom-in" className="ourcontainer">
             <div>
                 <h1>Our Products</h1>
             </div>
@@ -44,7 +50,7 @@ function OurProducts() {
                         src="https://gamewar-codezeel.myshopify.com/cdn/shop/products/7_7e28fae7-2461-41fd-8098-1772e43c09e5_1000x.jpg?v=1671087617"
                         alt=""
                     />
-                    <h2>Legend Of Musical Light</h2>
+                    <h2 data-aos="zoom-in">Legend Of Musical Light</h2>
                     <p> <AiFillStar />
                         <AiFillStar />
                         <AiFillStar />

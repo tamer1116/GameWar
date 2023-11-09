@@ -9,11 +9,11 @@ function Header() {
     useEffect(() => {
         Aos.init({
             duration: 1500,
-        })
-    }, [])
+        });
+    }, []);
 
     return (
-        <div data-aos="fade-up" className="container">
+        <div className="container">
 
             <div>
                 <Link to={"/"}>
@@ -24,23 +24,23 @@ function Header() {
                 <ul className="navmenu">
                     <li>
                         <Link to={"/creators"}>
-                            <a href="">Creators</a>
+                        Creators
                         </Link>
                     </li>
                   
                     <li>
                         <Link to={"/games"}>
-                            <a href="">Games</a>
+                            Games
                         </Link>
                     </li>
                     <li>
                         <Link to={"/publishers"}>
-                            <a href="">Publishers</a>
+                            Publishers
                         </Link>
                     </li>
                     <li>
                         <Link to={"/contact"}>
-                            <a href="">Contact</a>
+                            Contact
                         </Link>
                     </li>
                 </ul>

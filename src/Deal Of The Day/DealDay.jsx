@@ -4,7 +4,7 @@ import { AiFillStar } from "react-icons/ai";
 
 function DealDay() {
     return (
-        <div className="ourcontainer">
+        <div data-aos="zoom-in" className="ourcontainer">
             <div>
                 <h1>Deal Of The Day</h1>
             </div>
