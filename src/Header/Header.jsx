@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Header.css";
-import { AiFillHeart } from "react-icons/ai"
 import { Link } from "react-router-dom";
+import Aos from "aos";
 
 
 function Header() {
 
+    useEffect(() => {
+        Aos.init({
+            duration: 1500,
+        })
+    }, [])
+
     return (
-        <div className="container">
+        <div data-aos="fade-up" className="container">
 
             <div>
                 <Link to={"/"}>
