@@ -41,9 +41,7 @@ function Header() {
             </div>
             <div>
                 <input type="text" placeholder="Search..." />
-                <span className="icon">
-                    <a href=""><AiFillHeart /></a>
-                </span>
+            
             </div>
 
         </div>
